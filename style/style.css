@@ -83,6 +83,7 @@ body, * {
 .contant {
   margin-top: 20px;
   display: flex;
+  align-items: flex-start;
   gap: 30px;
 }
 @media screen and (max-width: 1024px) {
@@ -196,6 +197,7 @@ body, * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   gap: 25px;
 }
 .contant__items--item {
@@ -237,6 +239,10 @@ body, * {
 @media screen and (max-width: 1200px) {
   .contant__items--item {
     height: 250px;
+    min-width: 200px;
+  }
+  .contant__items--item h3 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 750px) {
