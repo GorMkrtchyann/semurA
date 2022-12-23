@@ -67,6 +67,11 @@
   border-radius: 20px;
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  .contect .product__img .product--img--childs > div {
+    height: 130px;
+  }
+}
 @media screen and (max-width: 850px) {
   .contect .product__img .product--img--childs > div {
     height: 110px;
