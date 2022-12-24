@@ -41,28 +41,28 @@ assortment_menu.innerHTML += emptyStr;
 
 const assortment_items = document.getElementById("assortment-items");
 
-createItem(assortmentSubMenu["Կղմինդր"])
+// createItem(assortmentSubMenu["Կղմինդր"])
 
-assortment_menu.addEventListener('click', function({target}){
-    let bool = false;
-    for (const iterator of assortment_menu.querySelectorAll("a")) {
-        iterator.classList.remove('active')
-    }
-    if(target.closest('a')){
-        target.classList.add('active')
-        for (const key in assortmentSubMenu) {
-            if(target.innerHTML.toLowerCase() == key.toLowerCase()){
-                createItem(assortmentSubMenu[key], target)
-                bool = true
-            }
-            if(!bool){
-                createItem([target.innerHTML])
-            }
-        }
+// assortment_menu.addEventListener('click', function({target}){
+//     let bool = false;
+//     for (const iterator of assortment_menu.querySelectorAll("a")) {
+//         iterator.classList.remove('active')
+//     }
+//     if(target.closest('a')){
+//         target.classList.add('active')
+//         for (const key in assortmentSubMenu) {
+//             if(target.innerHTML.toLowerCase() == key.toLowerCase()){
+//                 createItem(assortmentSubMenu[key], target)
+//                 bool = true
+//             }
+//             if(!bool){
+//                 createItem([target.innerHTML])
+//             }
+//         }
 
-    }
+//     }
 
-})
+// })
 
 function createItem(arr){
     let emptyItemStr = "";
